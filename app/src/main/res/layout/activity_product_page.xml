@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/bg2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            app:srcCompat="@android:drawable/stat_sys_download"
+            android:id="@+id/productImage"
+            android:layout_weight="0.39"
+            android:adjustViewBounds="true"
+            android:fadingEdge="horizontal|vertical"
+            android:fadingEdgeLength="20dp"
+            android:cropToPadding="true"
+            android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productName"
+            android:layout_weight="0.12"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:typeface="normal"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productPrice"
+            android:layout_weight="0.07"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productDesc"
+            android:layout_weight="0.39"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:fontFamily="casual" />
+
+        <Button
+            android:text="Buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buyButton"
+            android:fadingEdge="horizontal|vertical"
+            android:foregroundTint="@color/colorAccent"
+            android:background="@color/colorPrimary"
+            android:requiresFadingEdge="horizontal|vertical"
+            android:soundEffectsEnabled="true"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:textStyle="normal|bold"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_green_light"
+            android:elevation="6dp"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:id="@+id/checkoutButton"
+        android:layout_marginBottom="27dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+
+</RelativeLayout>

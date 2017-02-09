@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:drawable/editbox_dropdown_light_frame">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:weightSum="1"
+        android:layout_weight="0.09">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="129dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:weightSum="1">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkoutProductName"
+                android:layout_weight="0.97"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView android:id="@+id/checkoutProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:textSize="16dip"
+                android:text="price"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_green_dark" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkoutProductQty"
+            android:layout_weight="0.14"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkoutProductCountPrice"
+            android:layout_weight="0.26"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart"
+            android:fadingEdge="horizontal|vertical"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</LinearLayout>
